@@ -1,0 +1,125 @@
+Week 1 Homework!
+
+Reading Questions- Monday
+
+
+    What is your favorite color?
+        green
+
+    How old are you in seconds? (If you did this with only a calculator how would you do it?)
+        60 * 60 * 24 * 365 * 31 = 977616000 seconds
+
+    What is a String?
+        combination of characters as in a word or a  sentence
+
+    What’s the difference between single and double-quoted strings?
+
+        nothing, except if use of quotes is necessary more than once in a single string, the second pair have to be escaped or use the alternate form.
+
+    How do you use a quote mark inside of a string? (escaping characters)
+
+        \"
+
+    What is a variable?
+
+        is an object in which you can store data such as strings numbers or methods.
+
+
+    How do you put a variable inside a string? (interpolation or concatenation)
+
+        use the plus sign between strings
+        EXAMPLE:
+        verb = "is"
+        "my string " + verb + " awesome!"
+
+
+    What does the to_s or the to_i method do and why do we need them? (type casting)
+
+        changes the variable to a string (s) or an integer (i). Important when concatenating multiple types of data.
+
+Evens questions:
+
+    How do you call a method on a variable?
+
+         use variable + "." + Method
+
+    How do you generate a random number between 1 and 20?
+
+        rand(20)
+
+    How do you define a new method?
+
+        def [method name] [variable]
+            [arguement] [parameter]
+        end
+
+
+    How do you define a new method that takes 2 parameters?
+
+        def [method name]
+            [arguement] [par 1] [par 2]
+        end
+
+    What is a method?
+
+        A method performs a function on a local variable
+
+    What happens if you specify that it needs 2 parameters but you only give it 1? (arity)
+
+        Nothing it should result in an error
+
+
+    If you use a variable outside a function can it be used inside?
+
+        yes, but the value will be different or as defined within the function.
+
+    If you assign a new value inside the function, what is the value of the variable after the function? (overwriting vs shadowing)
+
+        It is not overwritten. the value only exists while the funtion is operating. Afterwards, the value will return to the global value
+
+
+    If you don’t explicitly return a value from a function, what is returned? (implicit return)
+
+        The function will still return the requested answer.
+
+
+Reading questions- Tuesday
+
+1.) Recursion is a method which calls itself
+2.) It is a small portion of the problem
+3.) psuedo code to sort recursively- array of 3 numbers
+      if array in order, end program
+      else
+      if element 1 > element 2, then swap places
+        else go to next element
+          if element 2 > 3, then swamp places
+            else end
+
+Reading questions- Wednesday
+
+1.) What is a REPL? Is irb a REPL, why or why not?
+
+read-eval-print loop (REPL). irb (Interactive Ruby) is a REPL because it does just this.  Commands are entered and returned very simply which makes it a good platform for learning and testing.
+
+2.) Why is the PickAxe book called PickAxe?
+
+Cause ther's a pick ax on the cover
+
+Evens:
+
+1.) How do we add methods to existing classes or modules (Reopening)
+
+2.) Why would we want to reopen a class or a module?
+3.) What is the first method called when you instanciate an object? (Constructor)
+4.) Could you call initialize or redefine new? Why would you or wouldn’t you do that?
+5.) What does the private keyword do?
+
+Odds:
+
+1.) What is the difference between a Proc and a method?
+        Proc is given is a single line as opposed to in a block form (covering multiple lines)
+2.) Could you have defined maybe_do in some way other than using a Proc?
+3.) How do you create a method that accepts a block as an argument?
+4.) When you’ve passed a block into a method, how do you call it in the method? (Yield)
+5.) Try profiling some of your code using the profile method in the book. Show me the output of the profile in a comment above the code. (Computers are fast, you may need to use sleep or a large number of iterations to make a meaninful number. Start with 10000.times do)
+

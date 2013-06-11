@@ -1,0 +1,42 @@
+MONDAY QUESTIONS
+
+When is it acceptable to use CamelCase?
+
+  In all cases except when setting Class names
+
+When do we use do...end instead of {...}?
+
+  Use do...end when code code consists of more than one statement. Otherwise use of curly braces can be used on a single line.
+
+In Test::Unit, what is the difference between assert and assert_equal?
+
+  assert tests that some condition is true, while assert_equal tests that the document has text
+
+Where do we put code that needs to be run before or after each test?
+
+  Within a Class subclass of Test::Unit::TestCase
+
+When we use setup, why do we need to use instance variables?
+
+  Instance variables reduce the need to repetively create testing variables
+
+How do you run all the specs in a folder?
+
+  For specs of everything in current directory and associated subdirection, use: spec .
+
+What is a stub?
+
+  stub is a method that can give you a copy of an object and its methods for the purpose of mimicking the behavior for testing.
+  Stub assists with getting the tests to work on an object
+
+What is a mock?
+
+  mock is a method is similar to stub, but also checks on which methods should be called and with what arguements
+
+Why do we make sure that our tests are red before fixing them?
+
+  To ensure that they fail
+
+If your company won’t allow full tests, what does it mean to “exercise your code, even just a little bit.”
+
+  Some testing should be done, even if it is not the full tests described in the book.

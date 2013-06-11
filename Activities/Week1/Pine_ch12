@@ -1,0 +1,19 @@
+alpha = Array.new + [12345] # Array addition.
+beta = String.new + 'hello' # String addition.
+karma = Time.new  # Current date and time.
+
+puts alpha
+puts beta
+puts karma
+
+puts "alpha = #{alpha}"
+puts "beta = #{beta}"
+puts "karma = #{karma}"
+
+dict_array =[]
+dict_hash ={}
+
+dict_array[0] ="candle"
+dict_array[1] ="glasses"
+dict_has['shia-a'] = 'candle'
+dict_hash['shaya'] ='glasses'

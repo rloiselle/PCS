@@ -1,0 +1,2 @@
+my_array=["z","s","c,","p","a"]
+my_array.sort!
