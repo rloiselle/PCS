@@ -1,4 +1,4 @@
-MONDAY QUESTIONS
+MONDAY READING QUESTIONS
 
 When is it acceptable to use CamelCase?
 
@@ -40,3 +40,60 @@ Why do we make sure that our tests are red before fixing them?
 If your company won’t allow full tests, what does it mean to “exercise your code, even just a little bit.”
 
   Some testing should be done, even if it is not the full tests described in the book.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TUESDAY READING Questions
+
+What alternative keyword can we use if we’re negating the boolean expression inside our if?
+
+ Use unless  instead of if not.
+
+What is the ‘negative doppleganger’ for while?
+
+  Until. Loop  will keep going until condition is true.
+
+What is a “modifier form” of an expression? (Which I call a post-conditional)
+
+  Do this, if that. One statement conditionals can be written on a single line with the condition stated at the end.
+
+What does a case statement return by default?
+
+  nil is returned  if there is no match to the when clause and there is no else.
+
+What two values evaluate to false inside an if?
+
+  false and nil
+
+What is a ternary expression used for (?:)?
+
+  alias for if statements.  condition ?: "if true statement" : "if false statement"
+
+What is a “guarded or” used for (||=)?
+
+  used as an unless. do condition unless condition exists
+
+What’s the fastest way to make an array of words?
+
+  array name %w( string1 string2 string3 etc)  -strings will not have embeddeds spaces
+
+When using symbols as Hash keys, what are the two ways to initialize a Hash using the curly brace notation? (1.9 hash syntax)
+
+  hash = { "key1" => value, "key2" => value, ...}
+  hash = { key1: "value", key2: "value"}
+
+What is the name of the * operator?
+
+  splat, used to allow any number of parametes to be set in a method
+
+Should you use a for loop to iterate over an Array or Hash? If not, what’s the alternative?
+
+  No....A loop will terminate early if a value evaluates to false inside the array/hash
+
+What is the difference between each and map?
+
+  each looks at the block to make implement arguements, while map re-maps a new array with the new values returned by the block
+
+What is a bang method?
+
+  ! is destructive to the object. It will change an object.
