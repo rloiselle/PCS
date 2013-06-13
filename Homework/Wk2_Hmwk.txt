@@ -97,3 +97,83 @@ What is the difference between each and map?
 What is a bang method?
 
   ! is destructive to the object. It will change an object.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+WEDNESDAY READING
+
+How do you add a newline to a String?
+
+  \n
+
+What is the difference between single and double quotes?
+
+double quotes can use tabs and newlines and arbitrary expressions #{} when using the literal backslash symbol
+single quotes can't do as much, but can  embed literal quote in it
+
+How would you replace all instances of the word ‘pie’ with the word ‘pizza’ in a String?
+
+gsub and regular expression  .gsub(/pizza/ "pie")
+
+What is the difference between gsub and gsub!?
+
+changes are made to the object itself rather than creating a new object with changes implemented.
+
+Do a little research on apidock.com and find 5 methods on String that you think are interesting and could be useful.
+
+.include?  returns true if string has the pattern.
+.lstrip  removes leading whitespace
+.prepend appends a word to the begining of a string
+.next or .succ  attempts to continue a sequence to the next logical position, either numberic or alphabetic but in string.
+.rindex returns the index of the last occurrence of given regex pattern.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+THURSDAY Reading
+
+What does the dot character match?
+
+  match any single character
+
+How do you match exactly 3 lower case characters
+
+  [a-z]{3}
+
+How do you match a range of characters?
+
+letter dash letter in brackets
+
+How do you match any whitespace?
+
+\s
+
+How do you match any number?
+
+[0-9]
+
+How do you match either “ferret” or “weasel”?
+
+You don't they are different species. ;^ P
+
+ferret|weasel
+
+
+What’s the difference between * and +
+
+* zero or more of the preceding character
++ one or more of the preceding character
+
+What does the operator =~ do in Ruby?
+
+allows you to match strings using regex by specifying the value is 'like' the pattern
+
+How do you match the beginning/end of a line?
+
+^ beginning
+$ end
+
+Regular expressions marked the beginning of my serious programmer career. Seriously spend some time on this. In fact, write down the time and remember where you were when you learned regexen.
+
+I have a harder time with them in Ruby for some reason than I did in R….Why?
