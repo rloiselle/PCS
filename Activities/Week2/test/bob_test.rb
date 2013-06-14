@@ -1,4 +1,4 @@
-require_relative 'bob'
+require '../lib/bob.rb'
 require 'minitest/autorun'
 
 class BobTest < MiniTest::Unit::TestCase
