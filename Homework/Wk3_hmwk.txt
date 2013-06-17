@@ -1,0 +1,47 @@
+WEEK 3
+
+MONDAY READING QUESTIONS
+
+1.) In your own words, summarize the 7 things on page 9-11 that jQuery does well
+
+- .find method makes it easy to find elements in a document without having to write multiplie lines of complex code
+- .addClass method allows a class to be changed or added to part of a document
+- the structure and content of a document can be moved around or inserted by using the Application Programming Interface
+- there is an event handler API which simplifies user interactions by making the required coding more simple and automatically controlling issues with browser incompatibilities
+- Interaction effects which provide visual feedback to the user are available
+- automatic page reloading tools are available for  when information must be taken from the server
+- libraries for basic data manipulation are available
+
+2.) How do you include external javascript files in HTML
+
+-  <script src="jquery.js"></script>  #src is the pathway and filename
+
+
+3.) Should jquery.js get included before or after our project files?
+
+-  After, to ensure that all .js enabled features are loaded before .js is run
+
+4.) What does this code do and why do we use it? $(document).ready()
+
+-  It loads the .js functions only after all document elements are loaded
+
+5.) What code would you use to select these things:
+- an element:  $("element")
+- an id: $("#id-name")
+- a class: $(".class-name")
+- a p tag, inside a div with class “turkey”, inside a body with the id “thanksgiving”.
+---> $("#thanksgiving.turkey:p")
+
+How would you add “tiger stripes” to a table with jQuery? (tiger stripes are alternating background colors)
+
+    $(document).ready(function() {
+    $('tr:nth-child(odd)').addClass('tiger-stripes');
+    });
+
+How do we select only checkboxes that are currently checked?
+
+- $('input[type="checkbox"]:checked')
+
+(research) What is the keyboard command to open the Chrome element inspector? To open the Chrome console?
+
+-  cmd-alt-i
