@@ -27,7 +27,7 @@ MONDAY READING QUESTIONS
 
 5.) What code would you use to select these things:
 - an element:  $("element")
-- an id: $("#id-name")
+- an id: $("#id_name")
 - a class: $(".class-name")
 - a p tag, inside a div with class “turkey”, inside a body with the id “thanksgiving”.
 ---> $("#thanksgiving.turkey:p")
@@ -45,3 +45,55 @@ How do we select only checkboxes that are currently checked?
 (research) What is the keyboard command to open the Chrome element inspector? To open the Chrome console?
 
 -  cmd-alt-i
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#TUESDAY READING QUESTIONS
+
+1.) What is the most common short version of $(document).ready()?
+
+- window.onload is slightly different or shortcut to writing doc.ready fxn is:
+      $(function() {
+        //code
+      });
+
+2.) What is “progressive enhancement”?
+
+-  enhanced element of the page should only be available if JS is enabled or provide links to pages where js is not needed.
+
+3.) How do you bind a click event to a button?
+
+-  $('button').bind('click', function(){
+      //code here
+});
+
+4.) Inside a click handler, what is the variable this set to?
+
+-  this corresponds to the element which the user is engaging
+
+5.) What is event bubbling?
+
+-   event propogates from the most specific to the most general element at the top of the chain.
+
+
+6.) How do we stop an event from bubbling up the chain?
+
+-  event.stopPropagations(); when event is a parameter given to the immediately preceding function.
+    -- this only works for event handlers
+
+7.) How do we stop an element from taking its default action (e.g. a submit button will refresh the page or submit a form)
+
+- .preventDefault()  will prevent an action from being triggered until desired
+
+8.) How do we remove a binding?
+
+- .unbind(), but care must be taken because unbind can affect other event handlers. To avoid this, provide a specific arguement to the method .unbind()
+
+9.) How do we hide and show elements?
+
+-  .hide()
+-  .show()
+10.) How do we blur or slide elements?
+
+-  .blur()
+-  .slide()
