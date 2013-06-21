@@ -12,8 +12,8 @@ class Rebecca
   end
   def skills          #to test how returns vs puts works within the method
 #    puts @skills     #This will list skills new line
-#    return @skills   # This will return as array
-    puts "I am not"   #puts will print string and then nil- DANGER
+#   return @skills   # This will return as array
+    # puts "I am not"   #puts will print string and then nil- DANGER
     #vs return will return the string twice.  Important when extracting variables
   end
   def fancymyskills     #

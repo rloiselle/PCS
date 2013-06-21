@@ -1,0 +1,30 @@
+This week's exam is slightly different. Because we've done the ruby exam before, I'd like to try an experiment and see how different the results are. Instead of providing a test, we would like you to find a way to demonstrate that you know the essential goals. This will take far more time to grade but it may be worth it if it allows people to extend and show their true potential.
+
+Create a project that uses as many of these goals as possible. Bold lines must be present. Some of these goals may not be demonstrable, note that and move on.
+
+Most important step You must annotate what goal you're trying to illustrate in comments above the code blocks.
+
+Command line / System tools
+
+* Be able to push code to github
+Memorize pairing strategies
+Programming Concepts
+
+Memorize the syntax for creating classes, functions, and common ruby data structures
+Understand GDB style debuggers
+Be able to troubleshoot some basic problems like ArgumentError
+* Understand what a class is
+Understand what it means to return
+Understand and use variables
+Memorize the steps for troubleshooting
+Memorize the steps for creating algorithms
+Memorize the common errors and how to fix them
+Ruby ecosystem
+
+* Be able to use instance and a local variables
+* Be able to create and call class and instance methods
+* Be able to use an if or unless
+Understand boolean evaluation
+Be able to use loop and each
+Understand the difference between a Hash and an Array
+Memorize common iterators and conditional statements

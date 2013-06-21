@@ -53,33 +53,33 @@
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#DOES THE METHOD CREATED_NAME REQUIRE SELF.??
-#because self is a class method, the method is not available for creating to instances
-#Thus you can only directly call the method on the class Robot not instances of it.
+# #DOES THE METHOD CREATED_NAME REQUIRE SELF.??
+# #because self is a class method, the method is not available for creating to instances
+# #Thus you can only directly call the method on the class Robot not instances of it.
 
-class Robot
-  # def initialize()
-  #   @name = created_name
-  #   #@macAddress = "a number that can't be changed"
-  # end
+# class Robot
+#   # def initialize()
+#   #   @name = created_name
+#   #   #@macAddress = "a number that can't be changed"
+#   # end
 
-   def self.created_name()
-    puts "Please enter a name for your robot"   #use puts to enter name on next line
-    name = gets.chomp
-    print "Your Robot's name is #{name}"    #do not use return because the method will exit before printing the message.
-   end
+#    def self.created_name()
+#     puts "Please enter a name for your robot"   #use puts to enter name on next line
+#     name = gets.chomp
+#     print "Your Robot's name is #{name}"    #do not use return because the method will exit before printing the message.
+#    end
 
-end
+# end
 
-#the #commented line can not be used because the method we've created is a class method and only accessible by calling itself or class Robot
-#no new instances of robot can be made as this code stands...?
-robot1 = Robot.new()
+# #the #commented line can not be used because the method we've created is a class method and only accessible by calling itself or class Robot
+# #no new instances of robot can be made as this code stands...?
+# robot1 = Robot.new()
 
-#puts robot1.instance_of? Robot  #puts true, indicates the instance has been created.
+# #puts robot1.instance_of? Robot  #puts true, indicates the instance has been created.
 
-print robot1.created_name  #an instance of the class Robot can not access the Class method created_name because created_name belongs to the Class method only
+# print robot1.created_name  #an instance of the class Robot can not access the Class method created_name because created_name belongs to the Class method only
 
-#There is no way to assign a name to the instance robot1 because the method is a class method
+# #There is no way to assign a name to the instance robot1 because the method is a class method
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -134,41 +134,41 @@ print robot1.created_name  #an instance of the class Robot can not access the Cl
 #Initial Test trial
 
 
-# class Robot
-#   def initialize()
-#     @name = created_name
-#     #@macAddress = "a number that can't be changed"
-#   end
+class Robot
+  def initialize()
+    @name = created_name
+    #@macAddress = "a number that can't be changed"
+  end
 
-#   # def Robot.make_robot_name(created_name)  #self.make_robot_name does same
-#   #   @name = created_name  #created name is placeholder for the string put inside @name
-#   # end
+  # def Robot.make_robot_name(created_name)  #self.make_robot_name does same
+  #   @name = created_name  #created name is placeholder for the string put inside @name
+  # end
 
-# # #Un-comment this code to prove that "Bob" is the Robot's name
-# #   def Robot.make_robot_name(created_name)  #self.make_robot_name does same
-# #     @name = "Bob"  #created name is placeholder for the string put inside @name
-# #   end
+# #Un-comment this code to prove that "Bob" is the Robot's name
+  def Robot.make_robot_name(created_name)  #self.make_robot_name does same
+    @name = "Bob"  #created name is placeholder for the string put inside @name
+  end
 
-# end
+end
 
 
-#  require 'minitest/autorun'
+ require 'minitest/autorun'
 
-#  class RobotTest < MiniTest::Unit::TestCase
+ class RobotTest < MiniTest::Unit::TestCase
 
-# # #This test method tests that the robot name is nil
-# # #This corresponds to the 1st .make_robot_name method above.
+# #This test method tests that the robot name is nil
+# #This corresponds to the 1st .make_robot_name method above.
 
-# #   def test_does_robot_have_name
-# #     assert_equal(nil, Robot.make_robot_name(@name))
-# #   end
-# # end
-
-# #This test method test that the robot's name is "Bob"
-# #Un-comment, when using the second .make_robot_name method above
-
-#   def test_is_robot_named_bob
-#     assert_equal("Bob", Robot.make_robot_name(@name))
+#   def test_does_robot_have_name
+#     assert_equal(nil, Robot.make_robot_name(@name))
 #   end
 # end
+
+#This test method test that the robot's name is "Bob"
+#Un-comment, when using the second .make_robot_name method above
+
+  def test_is_robot_named_bob
+    assert_equal("Bob", Robot.make_robot_name(@name))
+  end
+end
 

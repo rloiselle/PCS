@@ -1,7 +1,7 @@
 #require 'minitest/autorun'
 
 class Yarn
-  #attr_accessor(:color, :material)
+  attr_accessor(:color, :material)
 
 #attr_accessor-reader method (reads output)
   # def color()
@@ -42,12 +42,12 @@ end
 y = Yarn.new("blue","cotton")
  # y.color=("blue")  # set variable with =()
  # y.color = "blue"
- # puts y.color
+puts y.color  #this
  # puts(y.color())
  #y.display()
 
 # puts(y.to_s())
-puts(y)
+#puts(y)
 
 #puts y.methods.sort
 #puts "The id of y is #{y.object_id}."

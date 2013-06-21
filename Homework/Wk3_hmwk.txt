@@ -1,6 +1,6 @@
-WEEK 3
+WEEK 3: Learning With JQuery
 
-MONDAY READING QUESTIONS
+MONDAY READING QUESTIONS: CHAPTERS 1-2
 
 1.) In your own words, summarize the 7 things on page 9-11 that jQuery does well
 
@@ -48,7 +48,7 @@ How do we select only checkboxes that are currently checked?
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#TUESDAY READING QUESTIONS
+#TUESDAY READING QUESTIONS: CHAPTERS 3-4
 
 1.) What is the most common short version of $(document).ready()?
 
@@ -97,3 +97,71 @@ How do we select only checkboxes that are currently checked?
 
 -  .blur()
 -  .slide()
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+WEDNESDAY READING QUESTIONS: CHAPTER 5
+
+1.) How do you alter an a tag’s href attribute?
+
+- .attr()
+
+2.) How do you create new content and add it to the page?
+
+- to create: $("#id"), $(<element>"), (".class")
+- to add to page: .insertBefore(), .prependTo(), .appendTo(), .insertAfter()
+
+3.) How do you move content within the page?
+
+-  .insertBefore()
+-  .insertAfter()
+- in the parentheses, put the targeted element where the new information should be placed before or after.
+
+4.) What jQuery function do we use to iterate over all elements in a jQuery set?
+
+-  .each(index,value) for array
+-  .each(key, value)  for object
+
+5.) How do you copy a DOM element? How do you copy any event listeners as well?
+
+-  .clone() will copy any element, but an insertion method is required inorder to use the copied element elsewhere.
+-  .cloneCopy(withDataAndEvents)
+
+6.) What’s the difference between .text() and .html()?
+
+-  .text() only retrieves content, .html() retrieves content and html coding
+
+7.) How do we remove all the content inside an element?
+
+-  .empty().  Not to be confused with .remove() which removes the element and everything inside it.  Nor .detach with removes the elements without removing data and events.
+
+8.) When you insert new content into the page, does it have bindings attached to it? If not, how do we make sure that existing bindings that should have targeted the new element, do?
+
+-
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+THURSDAY READING QUESTIONS: CHAPTER 6
+
+1.) What is JSON?
+
+- JavaScript Object Notation: sets of key-value pairs (Objects) and implicit keys (Arrays)
+- shorthand versions with syntax value requirements
+
+2.) What is AJAX and why is it cool?
+
+-
+
+3.) Why don’t we allow cross-domain requests?
+
+-
+
+4.) How do we get around this?
+
+-
+
+5.) What’s the difference between $.get and $.getJSON?
+
+-
+
+6.) Does code immediately after an ajax call get run before or after the ajax call finishes?
+
