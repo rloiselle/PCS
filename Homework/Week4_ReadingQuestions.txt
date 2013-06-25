@@ -1,0 +1,70 @@
+Week 4
+
+MONDAY READING QUESTIONs
+
+1.) When you think about testing javascript, what use cases come to mind? Are they different from ruby?
+
+-  Test driven develoment and behavior driven development
+
+2.) Is jasmine a unit test framework or an integration test framework?
+
+-  integration test framework
+
+3.) How do you set up a basic jasmine runner? What boilerplate is needed?
+
+-  download the standalone which has framework files to set up your project.
+-  The js code to be tested is to be in src directory. The testing code belongs in the spec folder.
+-  the html fil is what runs the tests in the browser.
+
+4.) If it roughly corresponds with an individual test, what does describe correspond with?
+
+-  multiple tests
+
+5.) How do you test equality?
+
+-  toBeLessThan/toBeGreaterThan
+
+6.) What is the equivalent to setup/teardown?
+
+-  put function within it statement and passing the function as a parameter which calls itself in the expect function
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TUESDAY READING QUESTIONs
+
+1.) What is a test spy? Is it closer to a mock or a stub? Or neither?
+
+-  Test spy tracks calls and arguements to a function.  It can act like a mock or a stub depending on the matcher chained to it.
+-  Matchers which allow spies to act like a stub: toHaveBeenCalled, toHaveBeenCalledWith
+-  Matcher which allow spies to act like a mock:  andCallThrough, andReturn, andCallFake
+
+2.) How do you use a spy to facilitate the concept of mocking?
+
+- jasmine.creatSpy is available when no function exists to spy on. It tracks calls and arguments, with no implementations
+
+3.) Why would we watch objects to find out if certain functions have been called?
+
+-  to make sure a chain of events will occur
+
+4.) What are the use cases for mocks in Javascript? Are they different from Ruby?
+
+- to trigger the effect of another function spyOn is a good example.
+- Not different from Ruby.
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+WEDNESdAY READING QUESTIONs
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+THURSDAY  READING QUESTIONs
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+FRIDAY READING QUESTIONs
+
