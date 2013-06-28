@@ -1,4 +1,4 @@
-require_relative './calculator'
+require_relative 'calculator'
 require 'minitest/autorun'
 require 'minitest/pride'
 
@@ -12,17 +12,17 @@ class CalculatorTest < MiniTest::Unit::TestCase
   end
 
   def test_add_2
-    skip
+     skip
     assert_equal 3, @calculator.ask('What is 1 plus 2?')
   end
 
   def test_add_more_digits
-    skip
+     skip
     assert_equal 45801, @calculator.ask('What is 123 plus 45678?')
   end
 
   def test_add_negative_numbers
-    skip
+     skip
     assert_equal -11, @calculator.ask('What is -1 plus -10?')
   end
 end

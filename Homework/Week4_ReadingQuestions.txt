@@ -54,7 +54,17 @@ TUESDAY READING QUESTIONs
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-WEDNESdAY READING QUESTIONs
+WEDNESDAY READING QUESTIONs
+
+1.) What is a fixture?
+
+-- A mock testing
+
+2.) What is the purpose of providing a fixture as opposed to including jasmine in our website’s main layout if we want to test jQuery?
+
+
+
+3.) What problem is jasmine-fixture trying to fix over jasmine-jquery?
 
 
 
@@ -62,9 +72,25 @@ WEDNESdAY READING QUESTIONs
 
 THURSDAY  READING QUESTIONs
 
+1.) What is an asynchronous event and why is this a problem that jasmine even needs to solve?
 
+-  something that happens in the background of a website/page with out interrupting the flow of normal page operations
+-  It would be good to test that the asynchronous event does not effect the page in anyway or
+-  It would be good to test that the asynchronous event actually occurrs.
+
+2.) How do you make jasmine wait for asynchronous events to happen?
+
+-  waitsFor block
+
+3.) If you didn’t want to actually make the ajax connection, how would you prevent jQuery from actually calling out to a server?
+
+-  stub jQuery.ajax
+
+4.) If you didn’t actually have a server, but you wanted ajax to continue, how could you do that with Sinon.js?
+
+- fake server
+
+5.) How does Sinon.js differ from Jasmine’s built in spies?
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-FRIDAY READING QUESTIONs
 
